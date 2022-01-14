@@ -1,0 +1,22 @@
+=>REVERSE (sar pyg pyn pw chin yin 3)
+
+REVERSE Syntax
+
+SELECT REVERSE('Hello World');
+
+__________________________________________
+
+SELECT REVERSE('meow meow');
+
+SELECT * FROM persons;
+
+SELECT REVERSE(firstname) FROM persons;
+
+=>REVERSE() with CONCAT()
+
+SELECT CONCAT('woof',' = ',REVERSE('woof'));
+
+SELECT CONCAT(firstname,' = ',REVERSE(firstname)) FROM persons;
+....'' firstname mr single code m pr ya boo 3 mi yin result mr name twy m pw bl firstname reverse twy bl pw........
+
+SELECT CONCAT(firstname,' = ',REVERSE(firstname)) AS 'Rename' FROM persons;

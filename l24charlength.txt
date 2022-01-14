@@ -1,0 +1,38 @@
+=>CHAR LENGTH (Counts Characters in Strings )
+ sar lone a yay twt ko yi dh
+Syntax
+
+SELECT CHAR_LENGTH('Hello World');
+
+________________________________________________
+
+SELECT CHAR_LENGTH('Data Land Technology');
+
+_________________________________________________
+
+SELECT CHAR_LENGTH('Data Land Technoogy');
+
+__________________________________________________
+
+SELECT * FROM persons;
+
+SELECT CHAR_LENGTH(firstname) FROM persons;
+
+SELECT firstname,CHAR_LENGTH(firstname) FROM persons;
+
+SELECT firstname,CHAR_LENGTH(firstname) AS length FROM persons;
+
+SELECT firstname,CHAR_LENGTH(firstname) AS 'length' FROM persons;
+
+
+=>CHAR_LENGTH() with CONCAT()
+
+SELECT CONCAT(firstname,' is ',CHAR_LENGTH(firstname),' characters',' long') FROM persons;
+
+SELECT CONCAT(firstname,' is ',CHAR_LENGTH(firstname),'characters','long') AS 'char length' FROM persons;
+
+
+tin htut is 8 characters long
+
+***SQL FORMAT***
+http://sql-format.com/

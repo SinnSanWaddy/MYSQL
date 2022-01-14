@@ -1,0 +1,45 @@
+=>CHECK DATABASES;
+SHOW DATABASES;                                      ( need s*)
+
+
+=>CREATE DATABASE                                   (dont put- NO.,#%#$,s ) 
+CREATE DATABASE hrapp wdf6401; 
+
+=>DELETE DATABASE
+DROP DATABASE wdf6401;
+
+=>CHECK CURRENT DATABASE
+USE wdf6401;
+
+=>CHECK CURRENT DATABASE
+SELECT database();
+
+_____________________________________________________
+
+=>Database Name
+CAN CREATE
+CREATE DATABASE myapp;
+CREATE DATABASE myapp123;
+CREATE DATABASE book_store;                         (laraval mr "_" 3 p yay)
+									        
+
+CAN'T CREATE
+CREATE DATABASE MY App;
+CREATE DATABASE 123456;
+CREATE DATABASE @@#$%^;
+______________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+WDFXXXXX
+9CD

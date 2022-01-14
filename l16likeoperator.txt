@@ -1,0 +1,100 @@
+=>LIKE Operator
+
+Wildcards (7 types)
+
+WHERE customername LIKE 'a%' Finds any values that start with "a"
+WHERE customername LIKE '%or%' Finds any value that have "or" in any position
+WHERE customername LIKE '%a' Finds any values that end with "a"
+WHERE customername '_r%' Finds any values that have "r" in the second position
+WHERE customername LIKE "a_%" Finds any values that start with "a" and are at least 2 characters in length
+WHERE customername LIKE "a__%" Finds any values that start with "a" and are at least 3 characters in length
+WHERE customername LIKE "a%o" Finds any values that start with "a" and ends with O
+
+Syntax * FROM tablename
+WHERE columnname LIKE patterns;
+
+Method 2
+
+SELECT colomn1,column2,column3.......
+FROM tablename
+WHERE columnname LIKE pattern;
+
+______________________________________
+
+EXERCISE 
+
+SELECT name,age,salary,city
+FROM employees
+WHERE name LIKE 'maung maung'
+
+SELECT name,age,salary,city
+FROM employees
+WHERE salary LIKE '1%';
+
+
+
+
+SELECT name,age,salary,city
+FROM employees
+WHERE name LIKE "%ng"
+
+SELECT name,age,salary.city
+FROM employees
+WHERE name LIKE '%zaw%'
+
+a htl ka hr twy ko" ZAW% NG% " a kyee nk yay ll ya ! case sensitive m fik wo
+
+SELECT name,age,salary,city
+FROM employees
+WHERE name LIKe '_a%';
+
+SELECT name,age,salary,city
+FROM employees
+WHERE name LIKe '_a%';
+
+SELECT name,age,salary,city
+FROM employees
+WHERE name LIKe 'a__%;
+
+m zaw naw 20 100000 chin
+k yar 21 200000 chin
+k 22 400000 chin
+mm 23 40000 chin
+m 24 50000 chin
+
+SELECT name,age,salary,city
+FROM employees
+WHERE name LIKE 'k__%';
+
+SELECT name,age,salary,city
+FROM employees
+WHERE name LIKE 'a%g';
+
+____________________________
+EXERCISE (LIKE'____')
+
+SELECT * FROM employees;
+
+XXXXXXX
+SELECT * FROM employees WHERE salary LIKE '____' ;
+
+
+
+XXXXXXX
+SELECT * FROM employees WHERE salary LIKE '_____' ;
+
+
+
+SELECT * FROM employees WHERE salary LIKE '_' ;
+
+EXERCISE (LIKE '%')
+
+SELECT * FROM employees WHERE salary LIKE '%';
+
+
+face_book
+SELECT * FROM employees WHERE salary LIKE '%\_%';
+
+10%happy
+
+SELECT FROM employees WHERE name LIKE '%\%%'

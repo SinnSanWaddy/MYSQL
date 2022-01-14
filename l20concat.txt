@@ -1,0 +1,45 @@
+=>CONCAT ..column twy ko + tr....
+
+Syntax
+
+SELECT CONCAT(firsstname,lastname) FROM tablename;
+
+___________________________________________________
+
+SELECT CONCAT('Hello','World');
+
+SELECT CONCAT('Hello','','World');
+
+SELECT CONCAT('Hello','...','World');
+
+SELECT CONCAT('Hello','...',123);
+
+SElECT CONCAT('firstname','',lastname) AS fullname FROM persons;
+
+SELECT CONCAT(firstname,'',lastname) AS fullname,city FROM persons;
+
+SELECT firstname AS first,lastname AS last,
+CONCAT(firstname,',',lastname) AS full
+FROM persons;
+
+SELECT firstname AS first,lastname AS last,
+CONCAT(firstname,'/',lastname) AS full
+FROM persons;  .....nrc mr 3 .........
+
+SELECT firstname AS first,lastname AS last,
+CONCAT(firstname,'_',lastname) AS full
+FROM persons;
+
+_______________________________________________
+
+=>CONCAT_WS(Concat With Separator)
+
+Syntax
+
+SELECT CONCAT_WS('-',firstname,lastname) FROM persons;
+
+SELECT CONCAT_WS('-',firstname,lastname,city) FROM persons;
+
+SELECT CONCAT_WS('/',firstname,lastname,city) FROM persons;
+
+SELECT CONCAT_WS('_',firstname,lastname,city) FROM persons;

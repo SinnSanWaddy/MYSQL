@@ -1,0 +1,152 @@
+=>PRIMARY KEY Constraint (PK)
+
+PK unique identifier.
+PK constraint uniquely each record in table.
+PK value must unique, can't contain NULL values.
+PK single or multiple columns (fields).
+
+eg.id mr pk pyy htr yin 1, 2 khr htet lo m ya unique fik lo.
+____________________________________________________________
+
+PRIMARY KEY = Syntax
+
+Method 1
+CREATE TABLE persons(
+	id INT NOT NULL,
+	firstname VARCHAR(255) NOT NULL,
+	lastname VARCHAR(255),
+	age INT,
+	PRIMARY KEY (id)
+);
+
+Method 2
+CREATE TABLE persons(
+	id INT NOT NULL PRIMARY KEY,
+	firstname VARCHAR(255) NOT NULL,
+	lastname VARCHAR(255),
+	age INT
+);
+PRIMARY KET mr field 2 ku mr py chin yint a ku chin si mr lite pyy lo m ya bo field name twy m tu tae kg twy si mr PK twy py chin yin method 1 ku 
+
+1,2,3,7,9, sorting si pyy dl 1 kht htl pk pyy htr yin
+_________________________________________________________________
+
+CREATE TABLE computers(
+	brand VARCHAR(255),
+	made VARCHAR(255)
+);
+
+INSERT INTO computers(brand,made)
+VALUE ('asus','china');
+
+INSERT INTO computers(brand,made)
+VALUE ('asus','china');
+
+INSERT INTO computers(brand,made)
+VALUE ('asus','china');
+
+INSERT INTO computers(brand,made)
+VALUE ('asus','china');
+
+DROP TABLE computers;
+
+___________________________________________________________________
+
+=>Create Table with PK by brand
+
+CREATE TABLE computers(
+	brand VARCHAR(255) NOT NULL,
+	made VARCHAR(255),
+	PRIMARY KEY (brand)
+);
+
+DESC computers;
+
+INSERT INTO computers(brand,made)
+VALUE ('asus','china');
+
+INSERT INTO computers(brand,made)
+VALUE ('hp','thai');
+
+*error (duplicate entry 'asus' for key 'computers.PRIMARY')
+INSERT INTO computers(brand,made)
+VALUE ('asus','india');
+
+DROP TABLE computers;
+
+____________________________________________________________________
+
+CREATE TABLE computers(
+	id INT NOT NULL PRIMARY KEY,
+	brand VARCHAR(255),
+	made VARCHAR(255)
+);
+
+DESC computers;
+
+*error(field 'id' doesn't have a default value)
+INSERT INTO computers(brand,made)
+VALUE('asus','china');
+
+DROP TABLE computers;
+
+_____________________________________________________________________
+
+=>Create Table with PK by id using AUTO_INCREMENT
+
+integer twy ko a sin lyk phyae pyy dh a lo lo - auto increment   1,2,3,7,100,106, 
+
+CREATE TABLE computers(
+	id INT NOT NULL AUTO_INCREMENT,
+	brand VARCHAR(255),
+	made VARCHAR(255),
+	PRIMARY KEY (id)
+);
+
+DESC computers;
+
+INSERT INTO computers(brand,made)
+VALUE('asus','china');
+
+INSERT INTO computers(id,brand,made)
+VALUE(3,'hp','china');
+
+INSERT INTO computers(id,brand,made)
+VALUE(6,'hp','china');
+
+SELECT * FROM computers;
+
+INSERT INTO computers(brand,made)
+VALUE('dell','indo');
+
+SELECT * FROM computers;
+
+id no. tu yin error
+
+
+________________________________________
+
+table name = MEMBER
+
+ID 
+not null
+auto increment
+pk
+
+First Name
+15 length
+not null
+
+Last Name 
+20 length
+not null
+
+Age
+int
+not null
+
+Status
+100 length
+default = empl 
+
+oyedC

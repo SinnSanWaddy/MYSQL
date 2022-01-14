@@ -1,0 +1,76 @@
+=>DEFAULT VALUE
+
+CREATE TABLE mobiles(
+		brand VARCHAR(100) DEFAULT 'unnamed',
+		made VARCHAR(20) DEFAULT 'china'
+
+);
+
+DESC mobiles;
+
+INSERT INTO mobiles (brand,made)
+VALUE ('samsung','korea');
+
+SELECT * FROM mobiles;
+
+INSERT INTO mobiles(brand)
+VALUE ('mi')
+
+INSERT INTO mobile (made)
+VALUE ('japan') 
+
+INSERT INTO mobiles ()
+VALUE ();
+
+results - unnamed | china
+default mr pyy htr dh twy win lh ml (null value moh error m tat wo....not null so error tat ml[m htae m ny ya moh])
+
+SELECT * FROM mobiles;
+
+_______________________________________
+=>NO NUll and DEFAULT
+
+CREATE TABLE vehicles(
+          brand VACHAR(100)NOT NULL DEFAULT 'unnamed',
+          made VARCHAR(20)NOT NULL DEFAULT 'china'
+);
+
+INSERT INTO vehicles(brand,made)
+VALUE('toyota','japan');
+
+INSERT INTO vehicles(brand)
+VALUE('suzuki');
+
+INSERT INTO vehicles(made)
+VALUE('us')
+
+
+INSERT INTO vehicles()
+VALUE()
+
+INSERT INTO vehicles(brand,made)
+VALUE('toyota','NULL');
+
+INSERT INTO vehicles(brand,made)
+VALUE('Null','NULL');
+
+*single code pr mha ok 
+
+
+*error
+INSERT INTO vehicles(brand,made)
+VALUE('toyota',NULL);
+
+*error
+INSERT INTO vehicles(brand,made)
+VALUE (NULL,'indonesia')
+
+
+s
+INSERT INTO vehicles(brand,made)
+VALUE('NULL','NULL');
+
+
+*not null pr py mae ll default kyunt a lok lok dl data m kw htr ll
+
+*default vale pyy htr yin not null or null bh bl fik fik data a kone win

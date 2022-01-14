@@ -1,0 +1,79 @@
+SEVER LOGIN
+
+CMD
+
+username =ssh kotha@dltmyanmar.com
+password =datalandtechnology
+
+username =ssh dlt@myanmar.com
+password =datalandtechnology
+
+username = ssh dlt@157.230.240.154
+password= datalandtechnology
+
+username = ssh dlt@137.59.252.100
+password= datalandtechnology
+
+username=ssh wdf6401@dltmyanmar.com
+password=datalandtechnology
+
+Putty
+
+Host Name = dltmyanmar.com
+
+Host Name= 157.230.240.154
+
+Login as : dlt@myanmar.com
+Password : datalandtechnology
+
+WINSCP
+
+Host Name = dltmyanmar.com
+username =dlt
+password=datalandtechnology
+
+COMMEND Menu > Open Putty
+
+Login as : dlt 
+Password : datalandtechnology
+__________________________________________________________
+DATABASE LOGIN
+
+(Method-1)
+mysql -uWDFxxx -p
+datalandtechnology
+
+(Method-2)
+mysql -u WDFxxx -p
+
+
+exit;
+
+
+=>VERSION CHECK
+(METHOD 1 = in server)
+mysql -V
+
+(METHOD 2= in mysql)
+help; (shortcut = \h)
+status; (shortcut =\s)
+________________________________________________
+
+=>Arithmetic Operatores (5types)
+
+Operator                         Meaning                                              Operates on
++ (Add)                            Addition                                            Numeric Value
+- (Subtract)                       Subtraction                                              Numeric Value
+* (Multiply)                       Mulipicalation                                                Numeric Value
+/ (Divide)                         Division                                                            Numeric Value
+% (MOdulus)                        Returns remainder of a division                                        Numeric Value
+
+
+
+
+
+
+
+
+WDFxxx
+3ERR

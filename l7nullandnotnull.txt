@@ -1,0 +1,94 @@
+=>NULL datatype
+CREATE TABLE stus(
+	name VARCHAR(10),
+	age INT(11)
+);
+
+INSERT INTO stus(name,age)
+VALUES ('aung aung',20);
+
+INSERT INTO stus(name,age)
+VALUE ('su su',20);
+
+INSERT INTO stus(name)
+VALUE ('ma ma');
+
+INSERT INTO stus(age)
+VALUE (20);
+
+
+DROP TABLE stus;
+
+
+=>NOT NULL (we can call mandatory)
+
+CREATE TABLE stus(
+	name VARCHAR(10) NOT NULL,
+	age INT(11)
+);
+
+INSERT INTO stus(name,age)
+VALUE ('aung aung',20);
+
+INSERT INTO stus(name,age)
+VALUE ('su su',20);
+
+INSERT INTO stus(name)
+VALUE ('ma ma');
+
+INSERT INTO stus
+VALUE ('hnin mya',15);
+
+*error
+INSERT INTO stus(age)
+value (20);
+
+*error
+INSERT INT stus()
+VALUE ();
+
+DROP TABLE stus;
+
+CREATE TABLE stus(
+	name VARCHAR(10) NOT NULL,
+	age INT(11) NOT NULL
+);
+
+INSERT INTO stus(name,age)
+VALUE ('aung aung',20);
+
+INSERT INTO stus(name,age)
+VALUE ('su su',30);
+
+*error
+INSERT INTO stus(name)
+VALUE ('ma ma');
+
+*error
+INSERT INTO stus(age)
+VALUE (20);
+
+*error
+INSERT INTO stus()
+VALUE ();
+
+
+NULL so dh ka info twy ko htae chin ll m htae chin ll ya;
+
+NOT NULL = required
+NOT NULL htae htr yin htae ko htae pyyy ya ml
+m htae yin Query ok  m fik bo
+
+NULL - no value (pronunce)
+
+null pl htr htr yin tachr database twy info m htae ll thu ka data win ny yw
+
+   eg. 
+   INSERT INTO (name)
+   VALUES('nyi');
+
+   name |author|year
+   nyi  |NULL  |NULL
+
+
+1 ku htl htae ll kyn dae nrr twy ka NULL so p win twr ml

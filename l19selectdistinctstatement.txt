@@ -1,0 +1,33 @@
+=>DISTINCT STATEMENT
+DISTINCT Syntax
+
+SELECT DISTINCT column1,column2...
+FROM tablename;
+
+
+________________________
+
+EXERCISE
+SELECT * FROM employees;
+
+SELECT DISTINCT city FROM employees;
+
+SELECT DISTINCT salary FROM employees;
+
+SELECT DISTINCT city FROM employees ORDER BY city ASC;
+
+
+SELECT DISTINCT age FROM employees ORDER BY age ASC;
+
+SELECT DISTINCT age FROM employees ORDER BY age DESC;
+
+SELECT COUNT(city) FROM employees;
+...city akone hwt mr...
+
+SELECT COUNT(DISTINCT city) FROM employees;
+...duplicate m fik bl unique fik tae city twy bl hwt mr.........
+
+___________________________________
+
+31DT
+

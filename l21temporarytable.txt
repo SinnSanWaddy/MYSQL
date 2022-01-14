@@ -1,0 +1,26 @@
+=>Temporary TABLE
+=Syntax
+CREATE TABLE IF NOT EXISTS tablename(
+           column1 datatype,
+           colimn2 datatype,
+           column3 datatype,
+           ...
+);
+
+CREATE TEMPORARY TABLE IF NOT EXISTS workers(
+     id INT NOT NULL AUTO_INCREMENT,
+     name VARCHAR(20),
+     age INT,
+     city VARCHAR(50),
+     PRIMARY KEY(id)
+);
+
+DESC workers;
+
+SHOW TABLE // dosen't show in table list Show table mr pl thu ka m pw dh database pw mr dok pw dl..pyouk twr chin yin quit p mysql a sa ka pyn win
+
+INSERT INTO workers(name,age,city)
+ VALUES('aung aung',20,'yangon'),
+ ('kyaw kyaw',30,'mandalay');
+
+ SELECT * FROM workers;

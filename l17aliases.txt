@@ -1,0 +1,34 @@
+=>Aliases (Easier to read results)
+Aliases Syntax
+
+SELECT column AS
+FROM tablename;
+
+_________________________________________
+
+EXERCISE  AS ka orgin table mr m tk youk ,
+
+SELECT * FROM employees;
+
+SELECT name AS fullname
+FROM employees;
+
+SELECT  employeeid AS id
+FROM employees;
+
+SELECT  employeeid AS id,name
+FROM employees;
+
+SELECT employeeid AS id,name AS fullname,age,salary AS payamount
+FROM employees;
+
+SELECT employeeid AS id,name AS 'full name',age ,salary AS 'pay amount'
+FROM employees;
+
+.....fullname ko kwl yay chin yin '' htae yay ya ml. 'full name'...... skrr su 2 ku fik ny lo
+
+SELECT 
+ 		 employeeid AS id,
+         name AS fullname,
+         salary AS payamount
+FROM employees;
